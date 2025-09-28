@@ -306,8 +306,6 @@ margin: 1.4rem 0 1rem;
 }
 .rental-box img{
     margin: 1.8rem 0 1rem;
-    height: 74px;
-    object-position: center;
 }
 .rental-box h2{
     font-size: 1.4rem;
@@ -651,5 +649,6 @@ margin: 1.4rem 0 1rem;
         top: -32px;
         letter-spacing: 0.8rem;
     }
+
 
 }

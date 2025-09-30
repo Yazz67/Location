@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html#" class="logo">IA Motors<span>.</span></a>
+            <div class="navbar">
+                    <a href="index.html#" class="nav-link">Accueil</a>
+                  <!--   <a href="#trending" class="nav-link">Tendances</a> -->
+                    <a href="#newsletter" class="nav-link">Contact</a>
+
+            </div>
+            <div class="nav-icons">
+                 
+    <a href="#reviews" class='bx bx-phone contact-icon'></a>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="annonce-container">
+        <h1>Volkswagen Golf 8 GTI</h1>
+        <div class="top-section">
+            <!-- Galerie -->
+            <div class="gallery">
+    <img id="mainImg" class="gallery-main" src="images/gti.png" alt="Golf 8 GTI">
+    <!-- <div class="gallery-thumbs">
+      <img src="images/gti.png" alt="Vue 1" class="active">
+        <img src="images/s3.png" alt="Vue 2">
+        <img src="images/range.png" alt="Vue 3">
+        <img src="images/classe e.png" alt="Vue 4">
+    </div>-->
+</div>
+<div class="infos">
+  <div class="price-title">Tarifs :</div>
+  <div class="price-cards">
+    <div class="price-card">
+      <div class="duration">1 jour</div>
+      <div class="amount">180€</div>
+    </div>
+    <div class="price-card">
+      <div class="duration">3 jours</div>
+      <div class="amount">500€</div>
+    </div>
+    <div class="price-card">
+      <div class="duration">1 semaine</div>
+      <div class="amount">1100€</div>
+    </div>
+    <div class="price-card">
+      <div class="duration">1 mois</div>
+      <div class="amount">4000€</div>
+    </div>
+  </div>
+</div>
+
+
+   <div class="infos-principales">
+  <h2>Infos principales</h2>
+  <div class="meta">
+    <div>Année : 2022</div>
+    <div>Kilométrage : 30 000 km</div>
+    <div>Carburant : Essence</div>
+    <div>Boîte : Automatique</div>
+  </div>
+</div>
+
+<div class="details-techniques">
+  <h2>Détails techniques</h2>
+  <dl class="details">
+    <dt>Puissance :</dt><dd>300 ch</dd>
+    <dt>Portes :</dt><dd>5</dd>
+    <dt>Couleur :</dt><dd>Rouge</dd>
+    <dt>Disponibilité :</dt><dd>Immédiate</dd>
+  </dl>
+</div>
+
+<div class="equipements-options">
+  <h2>Équipements & options</h2>
+  <ul>
+    <li>GPS intégré</li>
+    <li>Sièges sport</li>
+    <li>Aide au stationnement</li>
+    <li>Airbags</li>
+    <li>Climatisation automatique</li>
+  </ul>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+<script>
+    // Script pour changer l’image principale quand on clique sur une miniature
+    const mainImg = document.getElementById('mainImg');
+    const thumbs = document.querySelectorAll('.gallery-thumbs img');
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            mainImg.src = thumb.src;
+        });
+    });
+
+    document.querySelectorAll(".accordion-header").forEach(button => {
+    button.addEventListener("click", () => {
+        const accordion = button.parentElement;
+        accordion.classList.toggle("active");
+    });
+});
+// Script pour la galerie d'images dans la section "Notre flotte"
+// Script pour la galerie d'images dans la section "Notre flotte"
+const galleryMainImg = document.getElementById('galleryMainImg');
+const galleryThumbs = document.querySelectorAll('.gallery-thumbs img');
+</script>
+
+
+    <div class="footer">
+        <div class="footer-content container">
+            <div class="footer-box">
+                <a href="index.html#" class="logo">IA MOTOR<span>.</span></a>
+                <p>Nous suivre</p>
+                <div class="social">
+                    <a href=""><i class="bx bxl-facebook"></i></a>
+                    <a href=""><i class="bx bxl-twitter"></i></a>
+                    <a href=""><i class="bx bxl-instagram"></i></a>
+                    <a href=""><i class="bx bxl-snapchat"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Heure d'ouverture</h3>
+                <p><span>Lundi - Vendredi</span>: 9h00 - 18h00</p>
+                <p><span>Samedi</span>: 10h00 - 16h00</p>
+                <p><span>Dimanche</span>: Fermé</p>
+            </div> 
+            <div class="footer-box">
+                <h3>Information</h3>
+                <a href="#">A propos</a>
+                <a href="#">A propos</a>
+                <a href="#">A propos</a>
+                <a href="#">A propos</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p><span>Téléphone</span>: 01 23 45 67 89</p>
+                <p><span>Email</span>: contact@iamotor.com</p>
+                <p><span>Adresse</span>: 123 Rue de l'Automobile, Paris</p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 IA MOTOR. Tous droits réservés.</p>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>

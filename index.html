@@ -12,16 +12,17 @@
         <div class="nav container">
             <a href="#" class="logo">IA Motors<span>.</span></a>
             <div class="navbar">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#trending" class="nav-link">Trending</a>
-                    <a href="#rentals" class="nav-link">Cars</a>
-                    <a href="#team" class="nav-link">Team</a>
-                    <a href="#reviews" class="nav-link">Review</a>
+                    <a href="#" class="nav-link">Accueil</a>
+                  <!--   <a href="#trending" class="nav-link">Tendances</a> -->
+                    <a href="#rentals" class="nav-link">Véhicules</a>
+                    <a href="#team" class="nav-link">Équipe</a>
+                    <a href="#reviews" class="nav-link">Avis</a>
 
             </div>
             <div class="nav-icons">
-                <a href="#"><i class='bx bx-search'></i></a>
-                <a href="#"><i class='bx bx-user user-icon'></i></a>
+                 <a href="#" id="searchBtn"><i class='bx bx-search'></i></a>
+    <input type="text" id="searchInput" placeholder="Rechercher un véhicule...">
+    <a href="#reviews" class='bx bx-phone contact-icon'></a>
                 <div class="menu-icon">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -33,14 +34,15 @@
     <section class="home" id="home">
         <div class="home-content container">
             <div class="home-img">
-                <img src="images/home.png" alt="">
+                <img src="images/classe e.png" alt="">
             </div>
             <div class="home-buttons">
-                <a href="#" class="btn">Explore More</a>
+                <a href="#" class="btn">Découvrir</a>
             </div>
         </div>
         
     </section>
+    <!--
     <section class="trending container" id="trending">
         <div class="heading">
             <h2>Trending Cars</h2>
@@ -63,69 +65,70 @@
             </div>
         </div>
     </section>
+    -->
     <section class="rentals container" id="rentals">
         <div class="heading">
-            <h2>Top Rentals</h2>
-            <p>Découvrez notre sélection des meilleures voitures à louer.</p>
+            <h2>Nos Véhicules</h2>
+            <p>Découvrez nos véhicules disponibles à la location.</p>
         </div>
         <div class="rentals-content">
             <div class="rental-box">
                 <div class="rental-top">
-                    <h3>sedan</h3>
+                    <h3>300 ch</h3>
                     <i class="bx bxs-heart"></i>
                 </div>
-                <img src="images/rental-1.png" alt="">
-                <h2>Rolls-Royce</h2>
-                <h4>Automatic</h4>
+                <img src="images/gti.png" alt="">
+                <h2>Golf 8 GTI</h2>
+                <h4>Automatique</h4>
                 <div class="price-btn">
-                    <p>200€<span>/day</span></p>
-                    <a href="#" class="rental-btn">Rent</a>
+                    <p>180€<span>/jour</span></p>
+                    <a href="gti.html" class="rental-btn">Voir</a>
                 </div>
             </div>
              <div class="rental-box">
                 <div class="rental-top">
-                    <h3>sedan</h3>
+                    <h3>300 ch</h3>
                     <i class="bx bxs-heart"></i>
                 </div>
-                <img src="images/rental-2.png" alt="">
-                <h2>Rolls-Royce</h2>
-                <h4>Automatic</h4>
+                <img src="images/s3.png" alt="">
+                <h2>Audi S3</h2>
+                <h4>Automatique</h4>
                 <div class="price-btn">
-                    <p>200€<span>/day</span></p>
-                    <a href="#" class="rental-btn">Rent</a>
+                    <p>200€<span>/jour</span></p>
+                    <a href="#" class="rental-btn">Voir</a>
                 </div>
             </div>
              <div class="rental-box">
                 <div class="rental-top">
-                    <h3>sedan</h3>
+                    <h3>300 ch</h3>
                     <i class="bx bxs-heart"></i>
                 </div>
-                <img src="images/rental-3.png" alt="">
-                <h2>Rolls-Royce</h2>
-                <h4>Automatic</h4>
+                <img src="images/range.png" alt="">
+                <h2>Range Rover</h2>
+                <h4>Automatique</h4>
                 <div class="price-btn">
-                    <p>200€<span>/day</span></p>
-                    <a href="#" class="rental-btn">Rent</a>
+                    <p>200€<span>/jour</span></p>
+                    <a href="#" class="rental-btn">Voir</a>
                 </div>
             </div>
              <div class="rental-box">
                 <div class="rental-top">
-                    <h3>sedan</h3>
+                    <h3>300 ch</h3>
                     <i class="bx bxs-heart"></i>
                 </div>
-                <img src="images/rental-4.png" alt="">
-                <h2>Rolls-Royce</h2>
-                <h4>Automatic</h4>
+                <img src="images/classe e.png" alt="">
+                <h2>Mercedes Classe E</h2>
+                <h4>Automatique</h4>
                 <div class="price-btn">
-                    <p>200€<span>/day</span></p>
-                    <a href="#" class="rental-btn">Rent</a>
+                    <p>200€<span>/jour</span></p>
+                    <a href="#" class="rental-btn">Voir</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="team container" id="team">
         <div class="heading">
-            <h2>Meet Our Experts</h2>
+            <h2>Notre équipe</h2>
         </div>
         <div class="team-content">
             <div class="team-box">
@@ -150,7 +153,7 @@
     </section>
     <section class="reviews" id="reviews">
         <div class="heading">
-            <h2>Our Customer's Reviews</h2>
+            <h2>Avis de nos clients</h2>
         </div>
         <div class="reviews-content container">
              <div class="t-box">
@@ -229,13 +232,7 @@
         </div>
         
     </section>
-    <section class="newsletter container" id="newsletter">
-        <h2>Nous Contacter</h2>
-        <p>Inscrivez-vous à notre newsletter pour recevoir les dernières mises à jour et offres.</p>
-        <form action="">
-            <input type="email" name="" id="" class="email" placeholder="Entrez votre email">
-            <input type="submit" value="Envoyer" class="s-btn">
-    </section>
+   
     <div class="footer">
         <div class="footer-content container">
             <div class="footer-box">
